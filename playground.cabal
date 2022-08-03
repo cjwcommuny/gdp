@@ -1,0 +1,49 @@
+cabal-version:      2.4
+name:               playground
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            NONE
+author:             cjwcommuny
+maintainer:         cjwcommuny@outlook.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable playground
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: 
+        Sorted,
+        Named,
+        The
+
+    -- LANGUAGE extensions used by modules in this package.
+    default-extensions:
+        DuplicateRecordFields, 
+        OverloadedRecordDot, 
+        OverloadedRecordUpdate,
+        FlexibleInstances,
+        GADTs,
+        MultiParamTypeClasses,
+        TypeFamilies,
+        KindSignatures,
+        ScopedTypeVariables,
+        Rank2Types,
+        DefaultSignatures,
+        FunctionalDependencies
+    build-depends:    
+        base ^>=4.16.1.0,
+        MissingH,
+    hs-source-dirs:   app
+    default-language: Haskell2010
